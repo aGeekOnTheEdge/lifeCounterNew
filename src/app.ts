@@ -2,8 +2,8 @@ export class App {
 
   heading: string;
   counterClass: any;
-  styleObject1: any;
-  styleObject2: any;
+  styleButtonRed: any;
+  styleButtonGreen: any;
   lifeTotal1: number = 20;
   lifeTotal2: number = 20;
 
@@ -12,9 +12,22 @@ export class App {
 
     this.counterClass = 'counter';
 
-    this.styleObject1 = {
+    this.styleButtonRed = {
       color: 'black',
-     'background-color': 'green'
+      'background-color': 'red'
+    };
+
+    this.styleButtonGreen = {
+      color: 'black',
+      'background-color': 'green',
+      border: 'none',
+      padding: '8px 16px',
+      'text-align': 'center',
+      'text-decoration': 'none',
+      display: 'inline - block',
+      'font-size': '16px',
+      margin: '2px 1px',
+      cursor: 'pointer'
     };
 
   }
