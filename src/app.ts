@@ -1,13 +1,30 @@
 export class App {
-  public heading: string;
-  lifeTotal = 20;
+
+  heading: string;
+  counterClass: any;
+  styleObject1: any;
+  styleObject2: any;
+  lifeTotal1: number = 20;
+  lifeTotal2: number = 20;
 
   constructor() {
     this.heading = 'MTG Life Counter';
+
+    this.counterClass = 'counter';
+
+    this.styleObject1 = {
+      color: 'black',
+     'background-color': 'green'
+    };
+
   }
 
-  adjustLife(modifier: number) {
-    this.lifeTotal = this.lifeTotal + modifier
+  adjustLife1(modifier: number) {
+    this.lifeTotal1 += modifier
+  }
+
+  adjustLife2(modifier: number) {
+    this.lifeTotal2 += modifier
   }
 
 }

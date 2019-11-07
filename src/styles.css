@@ -1,0 +1,77 @@
+body { padding-top: 10px; }
+
+.counter {
+  width: 15em;
+  border: 1px solid #333;
+  box-shadow: 8px 8px 5px #444;
+  padding: 8px 12px;
+}
+
+.greenCounter {
+  background-image: linear-gradient(180deg, #85FC73, #72D862 40%, #5DB050);
+}
+
+.redCounter {
+  background-image: linear-gradient(180deg, #FC7373, #D16262 40%, #B05353);
+}
+
+.blackCounter {
+  color: 'white';
+  background-color: 'black';
+}
+
+.blueCounter {
+  color: 'white';
+  background-color: 'blue';
+}
+
+section {
+  margin: 0 20px;
+}
+
+a:focus {
+  outline: none;
+}
+
+.navbar-nav li.loader {
+    margin: 12px 24px 0 6px;
+}
+
+.no-selection {
+  margin: 20px;
+}
+
+.contact-list {
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.panel {
+  margin: 20px;
+}
+
+.button-bar {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+.button-bar > button {
+  float: right;
+  margin: 20px;
+}
+
+li.list-group-item {
+  list-style: none;
+}
+
+li.list-group-item > a {
+  text-decoration: none;
+}
+
+li.list-group-item.active > a {
+  color: white;
+}
