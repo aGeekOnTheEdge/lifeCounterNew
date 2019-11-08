@@ -2,7 +2,11 @@
 
   <require from="./styles.css"></require>
 
-  <div class="counter redCounter" id="counterMain">
+
+
+
+
+<div class="counter ${color}" id="counterMain">
 
   <h1>${heading}</h1>
 
@@ -14,24 +18,13 @@
   <button click.delegate="adjustLife1(-5)" type="button" class="button redButton">-5</button>
   </div>
 
-  </div>
+<button type="button" click.delegate="changeColour('black')" class="colourPicker black"></button>
+<button type="button" click.delegate="changeColour('white')" class="colourPicker white"></button>
+<button type="button" click.delegate="changeColour('red')" class="colourPicker red"></button>
+<button type="button" click.delegate="changeColour('green')" class="colourPicker green"></button>
+<button type="button" click.delegate="changeColour('blue')" class="colourPicker blue"></button>
 
-  <br><br>
+</div>
 
-  <div class="counter greenCounter" style.bind="styleObject1" id="counterMain">
-
-    <h1>${heading}</h1>
-
-    <div id="counterView">
-      <button click.delegate="adjustLife2(1)" type="button" style.bind="styleButtonGreen">+1</button>
-      <button click.delegate="adjustLife2(5)" type="button" style.bind="styleButtonGreen">+5</button>
-      <h2>
-        <span id="currentLife" class="currentLife">${lifeTotal2}</span>
-      </h2>
-      <button click.delegate="adjustLife2(-1)" type="button" style.bind="styleButtonGreen">-1</button>
-      <button click.delegate="adjustLife2(-5)" type="button" style.bind="styleButtonGreen">-5</button>
-    </div>
-
-  </div>
 
 </template>

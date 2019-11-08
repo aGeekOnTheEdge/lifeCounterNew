@@ -6,6 +6,7 @@ export class App {
   styleButtonGreen: any;
   lifeTotal1: number = 20;
   lifeTotal2: number = 20;
+  color: string = 'blue';
 
   constructor() {
     this.heading = 'MTG Life Counter';
@@ -40,4 +41,12 @@ export class App {
     this.lifeTotal2 += modifier
   }
 
+  changeColour(newColour: string) {
+    this.color = newColour
+  }
+
+
 }
+
+
+
