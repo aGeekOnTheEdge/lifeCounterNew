@@ -1,0 +1,17 @@
+<template bindable="heading,color,startingLife">
+<div class="counter ${color}" id="counterMain">
+
+    <h1>${heading}</h1>
+
+    <div id="counterView">
+        <button click.delegate="adjustLife(1)" type="button" class="button ${color}">+1</button>
+        <button click.delegate="adjustLife(5)" type="button" class="button ${color}">+5</button>
+        <h2>
+            <span id="currentLife" class="currentLife">${lifeTotal1}</span>
+        </h2>
+        <button click.delegate="adjustLife(-1)" type="button" class="button ${color}">-1</button>
+        <button click.delegate="adjustLife(-5)" type="button" class="button ${color}">-5</button>
+    </div>
+
+</div>
+</template>

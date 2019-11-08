@@ -1,7 +1,7 @@
 <template>
 
   <require from="./styles.css"></require>
-
+  <require from="./life-counter.html"></require>
 
 
 
@@ -11,11 +11,11 @@
   <h1>${heading}</h1>
 
   <div id="counterView">
-  <button click.delegate="adjustLife1(1)" type="button" class="button redButton">+1</button>
-  <button click.delegate="adjustLife1(5)" type="button" class="button redButton">+5</button>
+  <button click.delegate="adjustLife1(1)" type="button" class="button ${color}">+1</button>
+  <button click.delegate="adjustLife1(5)" type="button" class="button ${color}">+5</button>
   <h2><span id="currentLife" class="currentLife" >${lifeTotal1}</span></h2>
-  <button click.delegate="adjustLife1(-1)" type="button" class="button redButton">-1</button>
-  <button click.delegate="adjustLife1(-5)" type="button" class="button redButton">-5</button>
+  <button click.delegate="adjustLife1(-1)" type="button" class="button ${color}">-1</button>
+  <button click.delegate="adjustLife1(-5)" type="button" class="button ${color}">-5</button>
   </div>
 
 <button type="button" click.delegate="changeColour('black')" class="colourPicker black"></button>
@@ -26,5 +26,8 @@
 
 </div>
 
+
+<life-counter heading="Player 1" color="green" startingLife="20"></life-counter>
+<life-counter heading="Player 2" color="red" startingLife="20"></life-counter>
 
 </template>

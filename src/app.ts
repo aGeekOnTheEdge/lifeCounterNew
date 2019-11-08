@@ -7,6 +7,7 @@ export class App {
   lifeTotal1: number = 20;
   lifeTotal2: number = 20;
   color: string = 'blue';
+  startingLife: number = 20;
 
   constructor() {
     this.heading = 'MTG Life Counter';
@@ -31,6 +32,10 @@ export class App {
       cursor: 'pointer'
     };
 
+  }
+
+  adjustLife(modifier: number) {
+    this.startingLife += modifier
   }
 
   adjustLife1(modifier: number) {
